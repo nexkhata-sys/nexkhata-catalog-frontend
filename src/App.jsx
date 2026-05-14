@@ -194,7 +194,7 @@ const App = () => {
       {/* 🌟 HEADER, SEARCH & FILTERS (Sticky) */}
       <div className="sticky top-0 z-40 flex flex-col shadow-md">
         <div className="bg-indigo-600 text-white px-6 pt-5 pb-4">
-          <div className="max-w-3xl mx-auto flex items-center justify-between">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl shadow-lg shrink-0">
                 🏢
@@ -212,7 +212,7 @@ const App = () => {
         </div>
 
         <div className="bg-slate-50/95 backdrop-blur-md px-4 py-3 border-b border-slate-200">
-          <div className="max-w-3xl mx-auto flex flex-col space-y-3">
+          <div className="max-w-7xl mx-auto flex flex-col space-y-3">
             {/* Search & Category Row */}
             <div className="flex space-x-2">
               <div className="relative shadow-sm flex-1">
@@ -260,7 +260,7 @@ const App = () => {
       </div>
 
       {/* 📦 ITEM GRID (Lazy Loaded) */}
-      <div className="max-w-3xl mx-auto px-4 mt-4">
+      <div className="max-w-7xl mx-auto px-4 mt-4">
         {displayedItems.length === 0 ? (
           <div className="bg-white p-8 rounded-xl border border-slate-200 text-center mt-4 shadow-sm">
             <span className="text-4xl opacity-50 mb-3 block">📭</span>
@@ -351,7 +351,7 @@ const App = () => {
       {/* 🚀 BOTTOM FLOATING CART BAR */}
       {cartArray.length > 0 && (
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] z-50 animate-slide-up">
-          <div className="max-w-3xl mx-auto flex justify-between items-center">
+          <div className="max-w-7xl mx-auto flex justify-between items-center">
             <div>
               <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
                 {totalCartItems} Items Selected
