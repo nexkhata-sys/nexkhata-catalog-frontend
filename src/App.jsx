@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const App = () => {
   // ⚡ URL से Company ID निकालना (जैसे nexkhata.vercel.app/1 से '1' निकलेगा)
-  const pathParts = window.location.pathname.split("/");
+  const pathParts = window.location.pathname.split("/").filter(Boolean);
   const urlCompanyId = pathParts[pathParts.length - 1] || 1;
 
   const [catalog, setCatalog] = useState([]);
